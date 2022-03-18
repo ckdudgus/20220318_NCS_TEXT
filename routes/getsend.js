@@ -17,7 +17,7 @@ router.post('/post',(req , res) => {
 })
 router.get('/awsSQL' , (req ,res) => {
     connection.query(
-        'select * from react_preinterview.interview',
+        'select * from sqlinterview.interview',
         (error , rows) => {
             if(error) throw error;
             console.log('해당 스키마만의 테이블내용' , rows);
